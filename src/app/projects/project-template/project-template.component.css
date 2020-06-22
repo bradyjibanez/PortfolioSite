@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+h1 {
+    color: #545454; 
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    margin-bottom: -0.5em;       
+}
+
+#body {
+    text-align: center;
+    margin: 0 1em 0 1em;
+    /*border: 3px solid black;*/
+}
+
+.button {
+    background-color: #FBFBF8;
+    color: #D4A537;     
+    border: none;
+    border-radius: 6px;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1.25vw;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;	    
+}
+
+.button:hover {
+    background-color: #585858; 
+    color: white;     
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.projectcase{
+    position: relative;
+}
+
+.projectlogo {
+    width: 300px;
+    height: 250px;
+}
+
+.link {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fadeio {
+    -webkit-animation: fade 0.25s linear forwards;
+    animation: fade 0.25s linear forwards;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}

@@ -1,0 +1,13 @@
+<div id="body">
+	<div (click)="learnMore()" class="projectcase" (mouseenter)="mouse_in = !mouse_in" (mouseleave)="mouse_in 
+	= !mouse_in">
+	<h1>
+		{{ project.Title }}
+	</h1>
+	<br/>
+		<img class="projectlogo" src="{{ project_image }}">
+		<div *ngIf="mouse_in" class="link">
+			<button class="button fadeio">Learn More</button>
+		</div>
+	</div>
+</div>

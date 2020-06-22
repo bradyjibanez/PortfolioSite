@@ -1,0 +1,42 @@
+<div id="banner">
+	<div id="bannerimgcontainer">
+		<img id="bannerimg" src="/assets/banner.png">
+	</div>
+	<div *ngIf="home" id="homelogo">
+		<div id="homelogoname">
+			BRADY IBANEZ
+		</div>
+	</div>
+	<div *ngIf="home" id="homelogorole">
+		SOFTWARE ENGINEER
+	</div>
+	<div *ngIf="home" class="homenavpos">
+		<div id="homenavcontainer">
+		</div>
+		<button [routerLink]="['/about']" class="homenavpos homenavbtnoutline button"><b>SEE MY PORTFOLIO</b></button>
+	</div>
+	<div *ngIf="!home" id="navbar">
+		<div class="navlinks">
+			<div class="navlink">
+				<a class="navtext" [routerLink]="['/home']">
+					HOME
+				</a>
+			</div>	
+			<div class="navlink">
+				<a class="navtext" [routerLink]="['/about']">
+					ABOUT
+				</a>
+			</div>
+			<div class="navlink">
+				<a class="navtext" [routerLink]="['/projects']">
+					PROJECTS
+				</a>
+			</div>
+			<div class="navlink">
+				<a class="navtext" [routerLink]="['/contact']">
+					CONTACT
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

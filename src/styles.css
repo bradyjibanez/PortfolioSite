@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url(https://allfont.net/allfont.css?fonts=ostrich-sans-medium);
+
+body {
+	background-color: #adadad;
+	margin: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+h1 { 
+  color: black; 
+  font-size: 128px;
+  font-family: 'Ostrich Sans Rounded', arial, 
+  serif; font-size: 45px; 
+  font-weight: normal; 
+  position: relative;
+}

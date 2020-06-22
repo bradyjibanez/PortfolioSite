@@ -1,0 +1,43 @@
+<div id="title">
+  <h1>MY WORK</h1>
+  <div class="underline"></div>
+</div>
+
+<div id="sectionstitle">
+	<h2>Live Web Projects</h2>
+</div>
+<div id="sectionsbody">
+	<div id="projectcontainers" *ngFor="let project of projects">
+ 	 	<project-template [project]="project"></project-template>
+		<div *ngIf="projects.length === 0">
+			Nothing
+		</div>
+	</div>
+</div>
+
+<div id="sectionstitle">
+	<h2>Local Only Projects</h2>
+</div>
+<div id="sectionsbody">
+	<div id="projectcontainers" *ngFor="let project of projects">
+ 	 	<project-template [project]="project"></project-template>
+		<div *ngIf="projects.length === 0">
+			Nothing
+		</div>
+	</div>
+</div>
+
+<div class="projectmodal fadeio" *ngIf="clicked && project_selected !== null">
+	<div class="projectinfo">
+		<h2>{{ project_selected.Title }}</h2>
+		<a [attr.href]="project_selected.URL"><button class="button"><h3>visit {{project_selected.Title}}</h3></button></a>
+		<div class="projectdescription">
+			{{ project_selected.Description }}
+		</div>
+		<div class="projectmodalclose">
+			<button class="nobutton" (click)="closeModal()">
+				<i class="fa fa-window-close" aria-hidden="true" style="font-size:36px;"></i>
+			</button>
+		</div>
+	</div>
+</div>

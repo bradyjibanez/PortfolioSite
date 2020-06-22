@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+a {
+	color: #D3D3D3;
+	text-decoration: none;
+    font-family: 'Ostrich Sans Rounded', arial; 
+	font-weight: 600;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;	
+}
+
+a:hover {
+	color: #2B2D2F;	
+}
+
+b {
+	color: #2B2D2F;
+	text-decoration: none;
+    font-family: 'Ostrich Sans Rounded', arial; 
+	font-weight: 600;
+	font-size: 24px;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;		
+}
+
+b:hover {
+	color: #adadad;
+}
+
+#banner {
+	height: 100%;
+}
+
+#bannerimgcontainer {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+	text-align: center;
+}
+
+.home {
+	height: 100%;
+}
+
+.nothome {
+	height: 0;
+}
+
+#bannerimg {
+	margin: -1em;
+}
+
+#homelogo {
+	border-top: 15px solid white;
+	border-bottom: 15px solid white;
+	border-right: 30px solid white;
+	border-left: 30px solid white;
+	width: 55%;
+	height: 25%;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#homelogoname {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	color: white;
+    font-family: 'Anton', sans-serif; 
+	font-weight: 900;
+	font-size: 5vw;
+    letter-spacing: 12px;
+}
+
+#homelogorole {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	color: white;
+    font-family: 'Open Sans Condensed', sans-serif; 
+	font-weight: 100;
+	font-size: 4vw;
+    letter-spacing: 19px;			
+}
+
+.homenavpos {
+	position: absolute;
+	top: 78%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    background-color: #D3D3D3;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;	    
+}
+
+.button:hover {
+	background-color: #2B2D2F;
+}
+
+#homenavcontainer {
+	box-sizing: content-box;  
+	background-color: white;
+	opacity: 0.25;
+	width: 430px;
+	height: 80px;
+	padding: 30px;  
+	border: 10px solid white;	
+}
+
+#navbar {
+    -webkit-animation: 0.75s ease 0s normal forwards 1 fadein;
+    animation: 0.75s ease 0s normal forwards 1 fadein;
+	background-color: #2B2D2F;
+	height: 4em;
+	vertical-align: middle;
+	position: relative;
+	border-top: solid;
+	border-bottom: solid;
+}
+
+.navlinks {
+    -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+    animation: 1.5s ease 0s normal forwards 1 fadein;	
+	position: absolute;
+	margin: 0 3em 0 5em;
+	top: 0;
+}
+
+.navlink{
+    -webkit-animation: .5s ease 0s normal forwards 1 fadein;
+    animation: .5s ease 0s normal forwards 1 fadein;	
+	background-color: none;
+	display: inline-block;
+	padding: 6% 0 5% 0;
+    -webkit-transition: background-color 3s;
+    -moz-transition: background-color 3s;
+    -o-transition: background-color 3s;
+    transition: background-color 3s;
+}
+
+.navlink:hover {
+    background-color: #a9a9a9;	
+}
+
+.navtext {
+	margin: 0 1em 0 1em;
+	font-weight: 100;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}

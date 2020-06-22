@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+h1 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+	font-weight: 100;
+	font-size: 4vw;
+    letter-spacing: 10px;		    
+}
+
+h2 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+	font-weight: 100;
+	font-size: 2vw;
+    letter-spacing: 10px;
+    color: #545454; 
+}
+
+h3 {
+	font-weight: 100;
+	font-size: 1vw;
+    letter-spacing: 2px;
+    color: white; 	
+}
+
+h3:hover {
+	color: black;
+}
+
+#title {
+	margin: 3em auto;
+	text-align: center;
+	width: 50%;
+}
+
+.underline {
+	border-bottom:3px solid black;
+	width: 120px;
+  	margin: 0 auto;
+    margin-top: -1em;
+}
+
+#sectionstitle {
+	margin-left: 5em;
+}
+
+#sectionsbody {
+	margin: 3em auto;
+	text-align: center;
+	width: 80%;	
+	/*border: 3px solid black;*/
+}
+
+#projectcontainers{
+	display: inline-block;
+	text-align: center;
+	width: 33.3333%;
+	margin-bottom: 1em;
+}
+
+.projectmodal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 60%;
+    text-align: center;
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+
+.projectmodalclose {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.projectinfo {
+	position: absolute;
+    width: 85%;
+    height: 75%;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+	z-index: 2; /* Sit on top */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(255,255,255); /* Fallback color */
+	background-color: rgba(255,255,255,0.85); /* White w/ opacity */    
+}
+
+.projectdescription {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 2em auto 0 auto;
+	max-width: 80%;
+	min-width: 50%;
+	text-align: left;
+    text-indent: 1em;
+}
+
+.projectlink {
+	top: 75%;	
+}
+
+.button {
+	background-color: #2B2D2F;
+    border: none;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;	    
+}
+
+.button:hover {
+	background-color: #adadad;
+}
+
+/* hides html button imagery when a tag no longer valid since inline (not block el)*/
+.nobutton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.fadeio {
+    -webkit-animation: fade 0.25s linear forwards;
+    animation: fade 0.25s linear forwards;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
