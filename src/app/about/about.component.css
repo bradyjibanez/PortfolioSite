@@ -2,17 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 h1 {
-    font-weight: bold;
-    font-family: 'Open Sans Condensed', sans-serif; 
-	font-weight: 100;
-	font-size: 4vw;
-    letter-spacing: 10px;		    
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 100;
+  font-size: 4vw;
+  letter-spacing: 10px;		    
+}
+
+h2 {
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 100;
+  font-size: 2vw;
+  letter-spacing: 10px;
+}
+
+ul {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 120px;
+}
+
+.width {
+  margin-bottom: 1em;
+  display: inline-block;
+  width: auto;
+  border-bottom:1px solid black;		    
 }
 
 #title {
-	margin: 3em auto;
-	text-align: center;
-	width: 50%;
+  margin: 0.5em auto;
+  text-align: center;
+  width: 50%;
 }
 
 .underline {
@@ -23,8 +47,26 @@ h1 {
 }
 
 #body {
-	margin: 3em auto;
-	text-align: center;
-	width: 50%;	
-	border: 3px solid black;
+  position: absolute;
+  margin: 1em auto;
+  text-align: left;
+  width: 40%;
+  left: 10%;	
+}
+
+.indent {
+  text-indent: 25px; 
+}
+
+#imagecontainer {
+  right: 10%;
+}
+
+#selfie {
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	height: auto;
+	width: auto;
+	transform: translate(-50%, -50%);
 }
