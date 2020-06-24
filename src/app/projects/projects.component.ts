@@ -20,6 +20,8 @@ export class ProjectsComponent implements OnInit {
   // override ignore inside modal for internal modal destroy icon
   dont_refresh: Boolean = false;
   project_selected: JSON = null;
+  background_img: string = 'query.png';
+  background_img_path: string;
 
   constructor(private message_service: MessageService) { }
 
@@ -43,6 +45,7 @@ export class ProjectsComponent implements OnInit {
 	  if (message) {
 	    if (message.subject === "project_selected" && message.body !== null) {
 	    	this.project_selected = message.body;
+        this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
 	      }
 	    }
     });    
@@ -73,6 +76,36 @@ export class ProjectsComponent implements OnInit {
     } else {
       this.ignore = false;
     }
+  }
+
+  nextModalImg() {
+    if (this.background_img === "query.png") {
+      this.background_img = 'response.png';
+    }
+    else if (this.background_img === "response.png") {
+      this.background_img = "result.png"
+    }
+    else if (this.background_img === "result.png") {
+     this.background_img = "query.png";
+    }
+    this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
+  }
+
+  prevModalImg() {
+    if (this.background_img === "query.png") {
+      this.background_img = 'result.png';
+    }
+    else if (this.background_img === "result.png") {
+      this.background_img = "response.png"
+    }
+    else if (this.background_img === "response.png") {
+     this.background_img = "query.png";
+    }
+    this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
+  }  
+
+  getImage() {
+    return "url("+this.background_img_path+")";
   }
 
 }

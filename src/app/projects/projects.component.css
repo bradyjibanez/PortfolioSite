@@ -60,13 +60,13 @@ h3:hover {
 }
 
 .projectmodal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 55%;
-    height: auto;
-    text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: auto;
+  text-align: center;
 	z-index: 1;
 	background-color: rgba(0,0,0,0.75);
 }
@@ -137,11 +137,15 @@ h3:hover {
 }
 
 .modalimgcontainer {
-    opacity: 0;
+  opacity: 0;
+  height: 50vh;
+}
+
+.modalimgsize {
 }
 
 .imgarrowflex {
-    background-image: url('../../assets/ThisWay/landmark.png');
+    /*background-image: url('../../assets/ThisWay/landmark.png');*/
     background-size: 100% 100%;
     display: flex; 
     align-items: stretch;
@@ -152,7 +156,7 @@ h3:hover {
 }
 
 .arrow {
-  border: solid white;
+  border: solid gray;
   border-width: 0 10px 10px 0;
   display: inline-block;
   padding: 20px;

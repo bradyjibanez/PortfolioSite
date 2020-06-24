@@ -45,11 +45,11 @@
 			</button>
 		</div>
 	</div>
-	<div class="imgarrowflex">
-		<button class="nobutton imgarrowgrid"><i class="fadeio arrow left"></i></button>
+	<div class="imgarrowflex" [ngStyle]="{'background-image': getImage()}">
+		<button (click)="prevModalImg()" class="nobutton imgarrowgrid"><i class="fadeio arrow left"></i></button>
 		<div class="imgarrowgrid modalimgcontainer">
-			<img class="modalimg" src='assets/ThisWay/landmark.png'>
+			<img class="modalimgsize" src='assets/modelsize.png'>
 		</div>
-		<button class="nobutton imgarrowgrid"><i class="fadeio arrow right"></i></button>
+		<button (click)="nextModalImg()" class="nobutton imgarrowgrid"><i class="fadeio arrow right"></i></button>
 	</div>
 </div>
