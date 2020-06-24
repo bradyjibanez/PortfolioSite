@@ -35,13 +35,12 @@ export class BannerComponent implements OnInit {
   }
 
   scrollBannerOut() {
-    //console.log(this.home)
     let banner = document.getElementById('bannerimgcontainer')
     banner.style.setProperty('display', 'block')
     let scroll_banner_out = window.setInterval(function() {
       let position = window.pageYOffset;
       if (position > 0) {
-        window.scrollTo(0, position-5);
+        window.scrollTo(0, position-12);
       } else {
         window.clearInterval(scroll_banner_out);
         let banner = document.getElementById('bannerimgcontainer')
@@ -51,17 +50,18 @@ export class BannerComponent implements OnInit {
   }
 
   scrollBannerUp() {
-    //console.log(this.home)
     let scroll_banner_up = window.setInterval(function() {
       let position = window.pageYOffset;
       if (position < document.getElementById('bannerimgcontainer').offsetHeight) {
-        window.scrollTo(0, position+5);
+        window.scrollTo(0, position+12);
       } else {
         window.clearInterval(scroll_banner_up);
         let banner = document.getElementById('bannerimgcontainer')
         banner.style.setProperty('display', 'none')
+        window.scrollTo(0, 0);
       }
     }, 0.0001);
     return true
   }
+
 }

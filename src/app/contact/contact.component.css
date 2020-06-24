@@ -2,17 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 h1 {
-    font-weight: bold;
-    font-family: 'Open Sans Condensed', sans-serif; 
-	font-weight: 100;
-	font-size: 4vw;
-    letter-spacing: 10px;		    
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 100;
+  font-size: 4vw;
+  letter-spacing: 10px;		    
 }
 
 #title {
-	margin: 3em auto;
-	text-align: center;
-	width: 50%;
+  text-align: center;
 }
 
 .underline {
@@ -23,8 +21,8 @@ h1 {
 }
 
 #body {
-	margin: 3em auto;
-	text-align: center;
-	width: 50%;	
-	border: 3px solid black;
+  margin: 3em auto;
+  text-align: center;
+  width: 50%;	
+  border: 3px solid black;
 }

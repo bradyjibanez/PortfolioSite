@@ -1,22 +1,35 @@
 {
 	"Projects": [
 		{
+			"ID": "EPICIoT",
 			"Title": "EPIC IoT",
 			"URL":"https://www.epiciot.tk",
 			"Image": "false",
-			"Description": "Extensible Package Integration Controller IoT Framework - An application that allows for users to create RESTfully interacting apps to control embedded system enabled IoT devices. This app is intended to allow for universalization of IoT, and to bridge the gap between non-interactive platforms. It is entirely agnostic to the transmission medium or iterative technology of any device controlling package (platform dedicated software). As long as there is a representative script generated with control endpoints (package specifications), the app is happy to interact. It is written front side using Angular and Node.js-Express interaction servers. The service depends upon a hub device for package install and control written in Python and adhering to UPnP (particularily relying on SSDP) for front end interaction. The backend service relies on Node.js to interact with and call from a MongoDB instance. Everything is independently served through local NGINX instances living in Ubuntu Docker containers of the user hubs created. Please contact me to inquire about access for source code reference."
+			"Type": "Live",
+			"Description": "Extensible Package Integration Controller IoT Framework - An application that allows for users to create RESTfully interacting apps to control embedded system enabled IoT devices. This app is intended to allow for universalization of IoT, and to bridge the gap between non-interactive platforms. It is entirely agnostic to the transmission medium or iterative technology of any device controlling package (platform dedicated software). As long as there is a representative script generated with control endpoints (package specifications), the app is happy to interact. It is written front side using Angular and Node.js-Express interaction servers. The service depends upon a hub device for package install and control written in Python and adhering to UPnP (particularily relying on SSDP) for front end interaction. The backend service relies on Node.js to interact with and call from a MongoDB instance. Everything is independently served through local NGINX instances living in Ubuntu Docker containers of the user hubs created. Please contact me to inquire about access for source code reference or hub drivers."
 		},
 		{
+			"ID": "MyAcePortrait",
 			"Title": "My Ace Portrait",
 			"URL":"http://myaceportrait.tk",			
 			"Image": "true",
+			"Type": "Live",
 			"Description": "A school project, this is a job hunting application for software industry leaders looking for new employees to fit a junior developer position, and new software dev grads looking for their first job out of school. This application is written in Django and takes advantage of uWSGI paired with NGINX through a Digital Ocean droplet to achieve remote distribution. The default mySQLlite database included by Django is used for account maintenance and interaction"
 		},
 		{
+			"ID": "ThisWay",			
 			"Title": "thisWay",
 			"URL":"http://cloudassignment2ibanez.herokuapp.com",			
 			"Image": "true",
-			"Description": "Also a school project done for a Cloud Computing course. This web app allows users to find an image of a landmark they care to visit, and allows them to input their currect address in order to be given directions via email from their location to the landmark. The app uses an array of Google provided APIs, including the Location API for direction generation, Cloud Vision API for landmark recognition, and the Google SMTP server for direction relay. This app is hosted via a Heroku Dyno, and is implemented as a Django web-app."
+			"Type": "Live",
+			"Description": "A school project done for a Cloud Computing course. This web app allows users to find an image of a landmark they care to visit, and allows them to input their currect address in order to be given directions via email from their location to the landmark. The app uses an array of Google provided APIs, including the Location API for direction generation, Cloud Vision API for landmark recognition, and the Google SMTP server for directions relay via email. This app is hosted via a Heroku Dyno, and is implemented as a Django web-app."
+		},
+		{
+			"ID": "EPICFaceRecDriver",												
+			"Title": "EPIC Face Rec Driver",
+			"Image": "false",
+			"Type": "Local",
+			"Description": "The driver base for an EPIC IoT (see project above) package that allows for users to interact with a facial recognition agent capabale of referencing unrecognized faces, learning the face, and notifiying when that person is seen at a later time. This was a delve into facial recognition provided through Python OpenCV, and uses the HOG (histogram of oriented gradients) feature descriptor as the primary mechanism for face rec in the agent's driving algorithm. The agent communicates directly through the python smtplib library and raw Python drivers, and interacts with it's environment via RaspberryPi3 and the stock Pi camera."
 		}
 	]
 }

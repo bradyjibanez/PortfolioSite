@@ -4,40 +4,52 @@
 </div>
 
 <div id="sectionstitle">
-	<h2>Live Web Projects</h2>
+	<h2>LIVE WEB PROJECTS</h2>
 </div>
 <div id="sectionsbody">
-	<div id="projectcontainers" *ngFor="let project of projects">
+	<div id="projectcontainers" *ngFor="let project of live_projects">
  	 	<project-template [project]="project"></project-template>
-		<div *ngIf="projects.length === 0">
+		<div *ngIf="live_projects.length === 0">
 			Nothing
 		</div>
 	</div>
 </div>
 
 <div id="sectionstitle">
-	<h2>Local Only Projects</h2>
+	<h2>LOCAL PROJECTS</h2>
 </div>
 <div id="sectionsbody">
-	<div id="projectcontainers" *ngFor="let project of projects">
- 	 	<project-template [project]="project"></project-template>
-		<div *ngIf="projects.length === 0">
+	<div id="projectcollectioncontainer">
+		<projects-collection [projects]="local_projects"></projects-collection>
+		<div *ngIf="live_projects.length === 0">
 			Nothing
 		</div>
 	</div>
 </div>
 
+<!--TEMPLATE FOR WEB PROJECTS MODAL, FED THROUGH MESSAGE SERVICE BETWEEN HERE AND 
+	PROJECTS TEMPLATE. PROJECTS COLLECTION IS STATIC...SO NO TEMPLATE OTHER THAN ITSELF-->
+
 <div class="projectmodal fadeio" *ngIf="clicked && project_selected !== null">
 	<div class="projectinfo">
-		<h2>{{ project_selected.Title }}</h2>
-		<a [attr.href]="project_selected.URL"><button class="button"><h3>visit {{project_selected.Title}}</h3></button></a>
 		<div class="projectdescription">
-			{{ project_selected.Description }}
+			<h2>{{ project_selected.Title }}</h2>
+			<div style="text-align: left;">
+				{{ project_selected.Description }}
+			</div>
+			<a [attr.href]="project_selected.URL"><button class="button"><h3>visit 	{{project_selected.Title}}</h3></button></a>
 		</div>
 		<div class="projectmodalclose">
 			<button class="nobutton" (click)="closeModal()">
 				<i class="fa fa-window-close" aria-hidden="true" style="font-size:36px;"></i>
 			</button>
 		</div>
+	</div>
+	<div class="imgarrowflex">
+		<button class="nobutton imgarrowgrid"><i class="fadeio arrow left"></i></button>
+		<div class="imgarrowgrid modalimgcontainer">
+			<img class="modalimg" src='assets/ThisWay/landmark.png'>
+		</div>
+		<button class="nobutton imgarrowgrid"><i class="fadeio arrow right"></i></button>
 	</div>
 </div>

@@ -9,10 +9,11 @@ import { MessageService } from '../../_services';
 })
 export class ProjectTemplateComponent implements OnInit {
 
-  @Input()
-  project: JSON;
-  project_image: string = '../../assets/comingsoon.jpg'; 
+  @Input() project: JSON;
+  project_image: string = '../../assets/comingsoon.png'; 
   mouse_in: Boolean = false;
+  logo: string = "standard"
+  ignore: Boolean= false;
 
   constructor(private message_service: MessageService) { }
 
@@ -29,4 +30,16 @@ export class ProjectTemplateComponent implements OnInit {
     }
   }
 
+  alternateClass(ignore: Boolean) {
+    if (ignore !== undefined) {
+      this.ignore = ignore;
+    }
+    if (!this.ignore) {
+      if (this.logo === "standard") {
+        this.logo = "hover";
+      } else {
+        this.logo = "standard";
+      }
+     }
+   }
 }

@@ -1,3 +1,7 @@
-#body {
+.bodyvh {
 	height: 90vh;
+}
+
+.body100 {
+	height: 0;
 }

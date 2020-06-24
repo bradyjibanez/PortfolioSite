@@ -36,11 +36,13 @@ b:hover {
 	height: 100%;
 }
 
-#bannerimgcontainer {
-    overflow: hidden;
-    background-size: cover;
+.bannerimgcontainer {
+    position: fixed;	
+    overflow-y: hidden;
+	background-size: cover;
     background-position: center;
 	text-align: center;
+	margin: 0;
 }
 
 .home {

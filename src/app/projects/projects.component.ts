@@ -10,7 +10,8 @@ import { MessageService } from '../_services';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects: Object;
+  live_projects = [];
+  local_projects = [];
   // Booleans heirarchy required for multi modal object selection and interaction
   // master decider for modal init
   clicked: Boolean;
@@ -23,7 +24,17 @@ export class ProjectsComponent implements OnInit {
   constructor(private message_service: MessageService) { }
 
   ngOnInit() {
-  	this.projects = Projects['Projects'];
+    let count = 1;
+    for (let project of Projects['Projects']) {
+      if (project['Type'] === "Live") {
+        this.live_projects.push(project);
+        count++;
+      }
+      if (project['Type'] === "Local") {
+        this.local_projects.push(project);
+        count++;
+      }    
+    }
   }
 
   @HostListener('click')
