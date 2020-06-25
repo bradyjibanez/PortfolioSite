@@ -160,7 +160,7 @@ a {
 }
 
 .arrow {
-  border: solid gray;
+  border: solid #90ee90;
   border-width: 0 10px 10px 0;
   display: inline-block;
   padding: 20px;

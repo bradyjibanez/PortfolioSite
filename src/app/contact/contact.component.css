@@ -9,6 +9,48 @@ h1 {
   letter-spacing: 10px;		    
 }
 
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #e0e0e0;  
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: #e0e0e0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;    
+}
+
+input[type=submit]:hover {
+  background-color: #e0e0e0;  
+  color: black; 
+}
+
+/* hides html button imagery when a tag no longer valid since inline (not block el)*/
+.nobutton {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 #title {
   text-align: center;
 }
@@ -24,5 +66,46 @@ h1 {
   margin: 3em auto;
   text-align: center;
   width: 50%;	
-  border: 3px solid black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #585858;
+  padding: 20px;
+  text-align: left;
+}
+
+.linklist {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+
+.linklistitem {
+  flex: 1;
+  margin: 0 1em 0 1em;
+}
+
+.emailcopynotification {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vw; 
+  color: white;
+  opacity: 0.75;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fadeio {
+    opacity: 1;
+    animation: fade 5s linear;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  15%,85% { opacity: 1 }
 }

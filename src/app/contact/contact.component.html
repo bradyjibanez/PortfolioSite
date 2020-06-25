@@ -1,4 +1,38 @@
 <div id="title">
   <h1>CONTACT</h1>
   <div class="underline"></div>
+  <div id="body">
+  	<div class="linklist">
+  		<div>
+  			<a href="https://ca.linkedin.com/in/brady-ibanez-b85587177">
+				<i class="fa fa-linkedin-square linklistitem" style="font-size:36px; color:black;"></i>
+			</a>
+  		</div>
+  		<div>
+  			<button (click)="copyEmail()" class="nobutton">
+				<i class="fa fa-envelope linklistitem" style="font-size:36px; color:black;"></i>
+			</button>
+			<div *ngIf="copy_email" class="emailcopynotification fadeio">you have a copy of my email...paste where you see fit!</div>
+  		</div>  
+  		<div>
+			<a href="https://github.com/bradyjibanez">
+				<i class="fa fa-github linklistitem" style="font-size:36px; color:black;"></i>
+			</a>
+  		</div>
+  	</div>
+	<div class="container">
+	  <form #message_form = "ngForm" (ngSubmit)="onSubmission(message_form, $event)">
+	    <label for="name">Name</label>
+	    <input type="text" id="name" name="name" placeholder="Your name" ngModel>
+
+	    <label for="email">Email</label>
+	    <input type="text" id="email" name="email" placeholder="Your email" ngModel>
+
+	    <label for="message">Message</label>
+	    <textarea id="message" name="message" placeholder="Your message here..." style="height:150px" ngModel></textarea>
+
+	    <input type="submit" id="submitbutton" value="Submit">
+	  </form>
+	</div>  	
+  </div>
 </div>
