@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 import * as Projects from '../../assets/projects.json';
 
 import { MessageService } from '../_services';
@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
   background_img: string = 'query.png';
   background_img_path: string;
 
-  constructor(private message_service: MessageService) { }
+  constructor(private message_service: MessageService) {}
 
   ngOnInit() {
     let count = 1;
@@ -39,15 +39,14 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
-  @HostListener('click')
-  learnMore() {
-	this.message_service.getMessage().subscribe(message => {
-	  if (message) {
-	    if (message.subject === "project_selected" && message.body !== null) {
-	    	this.project_selected = message.body;
-        this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
-	      }
-	    }
+  learnMore(ignore_because_open: Boolean = false) {
+  	this.message_service.getMessage().subscribe(message => {
+  	  if (message) {
+  	    if (message.subject === "project_selected" && message.body !== null) {
+  	    	this.project_selected = message.body;
+          this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
+  	    }
+  	  }
     });    
     this.clicked = true;
     if (!this.dont_refresh) {
@@ -58,7 +57,7 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
-  @HostListener('document:click')
+  //@HostListener('document:click', ['$event'])
   dontLearnMore() {
     if (this.clicked && !this.ignore) {
       this.clicked = false;
@@ -69,9 +68,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   closeModal() {
-    if (this.clicked && !this.ignore) {
+    if (this.clicked) {
       this.clicked = false;
-      this.dont_refresh = true;
       this.project_selected = null;
     } else {
       this.ignore = false;

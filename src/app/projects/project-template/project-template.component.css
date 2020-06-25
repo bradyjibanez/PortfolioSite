@@ -38,8 +38,8 @@ h1 {
 }
 
 .button:hover {
-    background-color: white; 
-    color: #58585B;     
+  background-color: white; 
+  color: #58585B;     
 }
 
 .button:focus {
@@ -48,35 +48,35 @@ h1 {
 }
 
 .projectcase{
-    width: 150%;
-    position: relative;
-    text-align: center;
+  width: 150%;
+  position: relative;
+  text-align: center;
 }
 
 .projectlogo {
-    width: 300px;
-    height: 250px;
-    opacity: 1;
+  width: 300px;
+  height: 250px;
+  opacity: 1;
 }
 
 .standard {
-    opacity: 1;
+  opacity: 1;
 }
 
 .hover {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .link {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .fadeio {
-    -webkit-animation: fadein 0.25s linear forwards;
-    animation: fadein 0.25s linear forwards;
+  -webkit-animation: fadein 0.25s linear forwards;
+  animation: fadein 0.25s linear forwards;
 }
 
 @keyframes fadein {

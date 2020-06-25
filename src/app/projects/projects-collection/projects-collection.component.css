@@ -6,17 +6,23 @@ h1 {
     font-style: italic;
     font-family: 'Open Sans Condensed', sans-serif; 
     font-weight: 100;
-    font-size: 1.5vw;
+    font-size: 22px;
     letter-spacing: 2px;
     margin-bottom: -0.5em;       
 }
 
 h5 {
     font-family: 'Courier New', serif;     
-    color: #101010;
+    color: white;
     font-weight: 100;
     font-style: inherit;
-    font-size: 0.8vw;
+    font-size: 12px;
+    margin: 0.75em 1em 0.75em 1em;
+}
+
+a {
+    cursor: pointer;
+    color: white;
 }
 
 #body {
@@ -24,76 +30,109 @@ h5 {
     height: 50vh;
 }
 
-#content {
-    display: flex;
-    border-bottom: 8px solid #adadad;
-    justify-content: space-between;
-    width: 100%;
-    height: 85%;
-}
-
-#col-left {
-    left: 0;
-    width: 10%;
-    background-color: #585858;
-}
-
-#col-right {
-    justify-content: right;
-    width: 10%;
-    background-color: #585858;
-}
-
 #footer {
-    background-color: #e0e0e0;
-    margin-top: auto;    
-    height: 27.5%;
+    background-color: #585858;
+    margin-top: auto;
     width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.footergridcontent {
+    flex: 1;
+    margin-bottom: 1em;
+    width: 100%;
+}
 
+.imgarrowflex {
+    /*background-image: url('../../assets/ThisWay/landmark.png');*/
+    background-size: 100% 100%;
+    display: flex; 
+    align-items: stretch;
+}
 
+.imgarrowgridmiddle {
+    width: 90%;
+    flex: 5% 90% 5%;
+}
 
+.imgarrowgridside {
+    height: 40vh;
+    width: 8%;
+    flex: 5% 90% 5%;
+}
 
+.arrowright {
+    border: solid gray;
+    border-width: 0 0.25em 0.25em 0;
+    display: inline-block;
+    padding: 0.75em;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    transition: border 0.5s;    
+}
 
+.arrowleft {
+    border: solid gray;
+    border-width: 0 0.25em 0.25em 0;
+    display: inline-block;
+    padding: 0.75em;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    transition: border 0.5s;    
+}
 
+.arrowright:hover {
+    border: solid black;
+    border-width: 0 0.25em 0.25em 0;
+    display: inline-block;
+    padding: 0.75em;   
+}
 
+.arrowleft:hover {
+    border: solid black;
+    border-width: 0 0.25em 0.25em 0;
+    display: inline-block;
+    padding: 0.75em; 
+}
 
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
 
-
-
-
-
-
-.button {
+button {
     background-color: #585858;
-    color: white;     
+    color: black;     
     border: none;
-    border-radius: 6px;
     padding: 8px 12px;
-    text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.5vw; 
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
     transition: background-color 0.5s;	    
 }
 
-.button:hover {
-    background-color: white; 
-    color: #58585B;     
+button:focus{
+    outline: none;
 }
 
-.button:focus {
-  outline: none;
-  box-shadow: none;
+.buttontext { 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fadeio {

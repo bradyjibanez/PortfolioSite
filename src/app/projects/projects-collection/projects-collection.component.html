@@ -1,12 +1,28 @@
-<div id="body" *ngFor="let project of projects">
-	<div id="content">
-		<div id="col-left">
+<!--div id="body" *ngFor="let project of projects"-->
+<div id="body" *ngIf="project">
+	<div class="imgarrowflex" [ngStyle]="{'background-image': getImage()}">
+		<button (click)="nextModalImg()" class="nobutton imgarrowgridside">
+			<div class="buttontext">
+				<i class="fadeio arrowleft left"></i>
+			</div>
+			<a (click)="prevProj()">PREV</a>
+		</button>
+
+		<div class="imgarrowgridmiddle">
+			<h1>{{ project.Title }}</h1>
 		</div>
-		<h1>{{ project.Title }}</h1>
-		<div id="col-right">
-		</div>
+
+		<button (click)="nextModalImg()" class="nobutton imgarrowgridside">
+			<div class="buttontext">
+				<i class="fadeio arrowright right"></i>
+			</div>
+			<a (click)="nextProj()">NEXT</a>
+		</button>
 	</div>
 	<div id="footer">
-		<h5>{{ project.Description }}</h5>
+		<h5 class="footergridcontent">{{ project.Description }}</h5>
+		<div class="footergridcontent">
+			available for reference @ <a [attr.href]="project.Github_Link">github</a>
+		</div>
 	</div>
 </div>

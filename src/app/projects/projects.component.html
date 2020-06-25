@@ -8,7 +8,7 @@
 </div>
 <div id="sectionsbody">
 	<div id="projectcontainers" *ngFor="let project of live_projects">
- 	 	<project-template [project]="project"></project-template>
+ 	 	<project-template (click)="learnMore()" [project]="project"></project-template>
 		<div *ngIf="live_projects.length === 0">
 			Nothing
 		</div>
@@ -16,7 +16,7 @@
 </div>
 
 <div id="sectionstitle">
-	<h2>LOCAL PROJECTS</h2>
+	<h2>UNDISTRIBUTED EXAMPLES</h2>
 </div>
 <div id="sectionsbody">
 	<div id="projectcollectioncontainer">
@@ -38,6 +38,9 @@
 				{{ project_selected.Description }}
 			</div>
 			<a [attr.href]="project_selected.URL"><button class="button"><h3>visit 	{{project_selected.Title}}</h3></button></a>
+		</div>
+		<div style="margin-bottom: 0.5em;">
+			available for reference @ <a [attr.href]="project_selected.Github_Link">github</a>
 		</div>
 		<div class="projectmodalclose">
 			<button class="nobutton" (click)="closeModal()">

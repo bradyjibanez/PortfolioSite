@@ -29,6 +29,10 @@ h3:hover {
 	color: black;
 }
 
+a {
+  cursor: pointer;
+}
+
 #title {
 	margin: 3em auto;
 	text-align: center;
@@ -108,7 +112,7 @@ h3:hover {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-	background-color: #2B2D2F;
+	  background-color: #2B2D2F;
     border: none;
     color: white;
     width: auto;

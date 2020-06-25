@@ -24,8 +24,8 @@ export class ProjectTemplateComponent implements OnInit {
     }
   }
 
-  learnMore() {
-    if (this.project) {
+  learnMore(event) {
+    if (this.project && event) {
       this.message_service.sendMessage("project_selected", this.project)
     }
   }

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, HostListener } from '@angular/core';
 import { Router, Event, NavigationEnd }  from '@angular/router';
 
 import { MessageService } from './_services';
