@@ -12,7 +12,7 @@
   			<button (click)="copyEmail()" class="nobutton">
 				<i class="fa fa-envelope linklistitem" style="font-size:36px; color:black;"></i>
 			</button>
-			<div *ngIf="copy_email" class="emailcopynotification fadeio">you have a copy of my email...paste where you see fit!</div>
+			<div *ngIf="copy_email" class="emailcopynotification fadeio">{{ message }}</div>
   		</div>  
   		<div>
 			<a href="https://github.com/bradyjibanez">
@@ -21,18 +21,17 @@
   		</div>
   	</div>
 	<div class="container">
-	  <form #message_form = "ngForm" (ngSubmit)="onSubmission(message_form, $event)">
-	    <label for="name">Name</label>
+	  <form #message_form="ngForm" (ngSubmit)="onSubmission(message_form, $event)">
 	    <input type="text" id="name" name="name" placeholder="Your name" ngModel>
 
-	    <label for="email">Email</label>
 	    <input type="text" id="email" name="email" placeholder="Your email" ngModel>
 
-	    <label for="message">Message</label>
-	    <textarea id="message" name="message" placeholder="Your message here..." style="height:150px" ngModel></textarea>
+	    <textarea id="message" name="message" placeholder="Your message..." style="height:150px" ngModel></textarea>
 
 	    <input type="submit" id="submitbutton" value="Submit">
 	  </form>
 	</div>  	
+    <div *ngIf="email_sent" class="emailsentnotification fadeio">{{ message }}</div>  
+    <div *ngIf="email_failed" class="emailfailednotification fadeio">{{ message }}</div> 
   </div>
 </div>
