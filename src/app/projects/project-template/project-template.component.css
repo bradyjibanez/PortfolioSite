@@ -2,39 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 h1 {
-    color: #101010;
-    font-style: italic;
-    font-family: 'Open Sans Condensed', sans-serif; 
-    font-weight: 100;
-    font-size: 1.5vw;
-    letter-spacing: 2px;
-    margin-bottom: -0.5em;       
+  color: #101010;
+  font-style: italic;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: 100;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  margin-bottom: -0.5em;       
 }
 
 #body {
-    text-align: center;
-    margin: 0 3em 0 3em;
-    opacity: 1;
-    width: 50%;
+  text-align: center;
+  margin: 0 3em 0 3em;
+  opacity: 1;
+  width: 50%;
 }
 
 .button {
-    background-color: #585858;
-    color: white;     
-    border: none;
-    border-radius: 6px;
-    padding: 8px 12px;
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.5vw; 
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
-    transition: background-color 0.5s;	    
+  background-color: #585858;
+  color: white;     
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5vw; 
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;	    
 }
 
 .button:hover {
@@ -82,4 +82,30 @@ h1 {
 @keyframes fadein {
   0% { opacity: 0 }
   100% { opacity: 1 }
+}
+
+
+/* MOBILE */
+
+
+@media screen and (max-width: 800px) {
+
+  #body {
+      text-align: center;
+      opacity: 1;
+  }
+
+  .projectcase{
+    position: relative;
+    text-align: center;
+  }  
+
+  h1 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
+    font-size: 5vw;
+    letter-spacing: 10px;
+  }  
+
 }

@@ -40,10 +40,14 @@ export class BannerComponent implements OnInit {
     let scroll_banner_out = window.setInterval(function() {
       let position = window.pageYOffset;
       if (position > 0) {
-        window.scrollTo(0, position-12);
+        window.scrollTo(0, position-8);
+        if ((position < 8) && (position > 0)) {
+          window.clearInterval(scroll_banner_out);
+          let banner = document.getElementById('bannerimgcontainer')        
+        } 
       } else {
         window.clearInterval(scroll_banner_out);
-        let banner = document.getElementById('bannerimgcontainer')
+        let banner = document.getElementById('bannerimgcontainer')                
       }
     }, 0.0001);
     return true
@@ -53,7 +57,7 @@ export class BannerComponent implements OnInit {
     let scroll_banner_up = window.setInterval(function() {
       let position = window.pageYOffset;
       if (position < document.getElementById('bannerimgcontainer').offsetHeight) {
-        window.scrollTo(0, position+12);
+        window.scrollTo(0, position+8);
       } else {
         window.clearInterval(scroll_banner_up);
         let banner = document.getElementById('bannerimgcontainer')

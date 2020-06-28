@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+
+/* GENERAL HTML TAGS */
+
+
 a {
 	color: #D3D3D3;
 	text-decoration: none;
@@ -32,13 +36,18 @@ b:hover {
 	color: #adadad;
 }
 
+
+/* WELCOME WINDOW */
+
+
 #banner {
-	height: 100%;
+	height: auto;
+	overflow: hidden;
+	width: auto;	
 }
 
 .bannerimgcontainer {
     position: fixed;	
-    overflow-y: hidden;
 	background-size: cover;
     background-position: center;
 	text-align: center;
@@ -84,12 +93,11 @@ b:hover {
     letter-spacing: 12px;
 }
 
-#homelogorole {
+#homelogosubtitle {
 	position: absolute;
-	top: 45%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 100%;
 	text-align: center;
 	color: white;
     font-family: 'Open Sans Condensed', sans-serif; 
@@ -129,7 +137,7 @@ b:hover {
 	background-color: #2B2D2F;
 }
 
-#homenavcontainer {
+#homeentercontainer {
 	box-sizing: content-box;  
 	background-color: white;
 	opacity: 0.25;
@@ -139,11 +147,16 @@ b:hover {
 	border: 10px solid white;	
 }
 
+
+/* GLOBAL NAVBAR */
+
+
 #navbar {
     -webkit-animation: 0.75s ease 0s normal forwards 1 fadein;
     animation: 0.75s ease 0s normal forwards 1 fadein;
 	background-color: #2B2D2F;
 	height: 4em;
+	width: 100%;
 	vertical-align: middle;
 	position: relative;
 	border-top: solid;
@@ -154,7 +167,7 @@ b:hover {
     -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
     animation: 1.5s ease 0s normal forwards 1 fadein;	
 	position: absolute;
-	margin: 0 3em 0 5em;
+	margin: 0 0 0 5em;
 	top: 0;
 }
 
@@ -163,7 +176,7 @@ b:hover {
     animation: .5s ease 0s normal forwards 1 fadein;	
 	background-color: none;
 	display: inline-block;
-	padding: 6% 0 5% 0;
+	padding: 6% 0 5.5% 0;
     -webkit-transition: background-color 3s;
     -moz-transition: background-color 3s;
     -o-transition: background-color 3s;
@@ -189,4 +202,112 @@ b:hover {
     0% { opacity:0; }
     66% { opacity:0; }
     100% { opacity:1; }
+}
+
+
+/* MOBILE VERTICAL */
+
+
+@media screen and (max-width: 1500px) and (orientation: portrait) {
+
+	.homenavpos {
+		position: absolute;
+		top: 78%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#homelogo {
+		border-top: 15px solid white;
+		border-bottom: 15px solid white;
+		border-right: 30px solid white;
+		border-left: 30px solid white;
+		width: 55%;
+		height: 15%;
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#homelogosubtitle {
+		position: absolute;
+		top: 45%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		color: white;
+	    font-family: 'Open Sans Condensed', sans-serif; 
+		font-weight: 100;
+		font-size: 4vw;
+	    letter-spacing: 19px;			
+	}
+
+	#homeentercontainer {
+		box-sizing: content-box;  
+		background-color: white;
+		opacity: 0.25;
+		width: 240px;
+		height: 80px;
+		padding: 30px;
+		border: 10px solid white;	
+	}
+
+
+	.button {
+		position: absolute;
+		top: 50%;
+		left: 49.5%;
+		transform: translate(-50%, -50%);
+	    background-color: #D3D3D3;
+	    border: none;
+	    color: white;
+	    padding: 30px 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    cursor: pointer;
+	    -webkit-transition: background-color 0.5s;
+	    -moz-transition: background-color 0.5s;
+	    -o-transition: background-color 0.5s;
+	    transition: background-color 0.5s;	    
+	}
+
+	.navlinks {
+	    -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+	    animation: 1.5s ease 0s normal forwards 1 fadein;	
+		position: absolute;
+		margin: 0 0 0 1.5em;
+		top: 0;
+	}
+
+}
+
+
+/* MOBILE HORIZONTAL */
+
+
+@media screen and (max-width: 1500px) and (orientation: landscape) {
+
+	#banner {
+    	position: relative;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	#homelogosubtitle {
+		position: absolute;
+		top: 45%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		color: white;
+	    font-family: 'Open Sans Condensed', sans-serif; 
+		font-weight: 100;
+		font-size: 4vw;
+	    letter-spacing: 19px;			
+	}
+
 }

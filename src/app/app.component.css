@@ -1,7 +1,9 @@
 .bodyvh {
-	height: 90vh;
+	height: auto;
+	width: auto;
 }
 
 .body100 {
 	height: 0;
+	width: auto;
 }

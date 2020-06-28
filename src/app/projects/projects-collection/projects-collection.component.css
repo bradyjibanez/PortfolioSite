@@ -157,3 +157,24 @@ button:focus{
   0% { opacity: 0 }
   100% { opacity: 1 }
 }
+
+/* MOBILE */
+
+
+@media screen and (max-width: 800px) {
+
+  #body {
+    margin: 3em auto;
+    text-align: center;
+    width: 80%; 
+  }
+
+  h1 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
+    font-size: 5vw;
+    letter-spacing: 10px;
+  }  
+
+}
