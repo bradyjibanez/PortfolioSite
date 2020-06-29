@@ -87,6 +87,14 @@ ul {
 
 @media screen and (max-width: 800px) {
 
+  h1 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
+    font-size: 8vw;
+    letter-spacing: 10px;       
+  }
+
   h2 {
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif; 

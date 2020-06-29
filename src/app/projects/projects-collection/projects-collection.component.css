@@ -164,16 +164,15 @@ button:focus{
 @media screen and (max-width: 800px) {
 
   #body {
-    margin: 3em auto;
     text-align: center;
-    width: 80%; 
+    width: 100%; 
   }
 
   h1 {
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif; 
     font-weight: 100;
-    font-size: 5vw;
+    font-size: 3vw;
     letter-spacing: 10px;
   }  
 

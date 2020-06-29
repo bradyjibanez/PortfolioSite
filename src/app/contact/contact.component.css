@@ -72,7 +72,6 @@ input[type=submit]:hover {
   background-color: #585858;
   padding: 20px;
   text-align: left;
-  border: 2px solid white;
 }
 
 .linklist {
@@ -91,7 +90,7 @@ input[type=submit]:hover {
   border: 2px solid black;
   padding: 20px;
   border-radius: 5px;
-  background-color: black;
+  background-color: #4BB543;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5vw; 
   color: white;
@@ -149,10 +148,12 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 800px) {
 
-  #body {
-    margin: 3em auto;
-    text-align: center;
-    width: 80%; 
+  h1 {
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
+    font-size: 8vw;
+    letter-spacing: 10px;       
   }
 
   h2 {
@@ -162,5 +163,61 @@ input[type=submit]:hover {
     font-size: 5vw;
     letter-spacing: 10px;
   }  
+
+  #body {
+    margin: 3em auto;
+    text-align: center;
+    width: 80%; 
+  }
+
+  .emailcopynotification {
+    position: absolute;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #4BB543;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4.5vw; 
+    color: white;
+    opacity: 0.75;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .emailsentnotification {
+    position: absolute;
+    border: 2px solid black;
+    padding: 20px;  
+    margin: 0 1em 0 1em;
+    border-radius: 5px;
+    background-color: #4BB543;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4.5vw; 
+    color: white;
+    opacity: 0.75;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .emailfailednotification {
+    position: absolute;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 0 1em 0 1em;  
+    border-radius: 5px;
+    background-color: #ff0033;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4.5vw; 
+    color: white;
+    width: 80%;    
+    opacity: 0.75;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 }
