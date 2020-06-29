@@ -4,7 +4,7 @@
 			{{ project.Title }}
 		</h1>
 		<br/>
-		<div (mouseenter)="alternateClass(); ignore=!ignore" (mouseleave)="alternateClass(false)">
+		<div (mouseenter)="alternateClass('ignore'); ignore=!ignore" (mouseleave)="alternateClass(false)">
 			<img [ngClass]="logo" class="projectlogo" src="{{ project_image }}">
 			<div *ngIf="mouse_in" class="link">
 				<button class="button fadeio">learn more</button>

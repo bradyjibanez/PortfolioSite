@@ -9,7 +9,7 @@ import { MessageService } from '../../_services';
 })
 export class ProjectTemplateComponent implements OnInit {
 
-  @Input() project: JSON;
+  @Input() project: any;
   project_image: string = '../../assets/comingsoon.png'; 
   mouse_in: Boolean = false;
   logo: string = "standard"
@@ -30,8 +30,8 @@ export class ProjectTemplateComponent implements OnInit {
     }
   }
 
-  alternateClass(ignore: Boolean) {
-    if (ignore !== undefined) {
+  alternateClass(ignore: any) {
+    if (ignore !== "ignore") {
       this.ignore = ignore;
     }
     if (!this.ignore) {
