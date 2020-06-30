@@ -1,18 +1,19 @@
 <!--div id="body" *ngFor="let project of projects"-->
 <div id="body" *ngIf="project">
 	<div class="imgarrowflex" [ngStyle]="{'background-image': getImage()}">
-		<button (click)="nextModalImg()" class="nobutton imgarrowgridside">
+		<button (click)="prevProjectImg()" class="nobutton imgarrowgridside">
 			<div class="buttontext">
 				<i class="fadeio arrowleft left"></i>
 			</div>
 			<a class="navtext" (click)="prevProj()">PREV</a>
 		</button>
 
-		<div class="imgarrowgridmiddle">
+		<div class="imgarrowgridmiddle" [ngStyle]="{'background-image': getImage()}">
 			<h1>{{ project.Title }}</h1>
+			<img class="projectimg" src="assets/modelsize.png">
 		</div>
 
-		<button (click)="nextModalImg()" class="nobutton imgarrowgridside">
+		<button (click)="nextProjectImg()" class="nobutton imgarrowgridside">
 			<div class="buttontext">
 				<i class="fadeio arrowright right"></i>
 			</div>

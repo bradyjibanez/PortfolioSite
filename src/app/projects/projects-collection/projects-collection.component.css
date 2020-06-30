@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 h1 {
-    color: #101010;
+    color: black;
     font-style: italic;
     font-family: 'Open Sans Condensed', sans-serif; 
     font-weight: 100;
     font-size: 22px;
     letter-spacing: 2px;
-    margin-bottom: -0.5em;       
+    margin-bottom: 0;
+    background: white;
+    width: 50%; 
+    left: 25%;
+    border-radius: 5px
 }
 
 h5 {
@@ -59,7 +63,6 @@ a {
 }
 
 .imgarrowflex {
-    /*background-image: url('../../assets/ThisWay/landmark.png');*/
     background-size: 100% 100%;
     display: flex; 
     align-items: stretch;
@@ -68,12 +71,19 @@ a {
 .imgarrowgridmiddle {
     width: 90%;
     flex: 5% 90% 5%;
+    overflow: hidden;
+    background-size: cover;
 }
 
 .imgarrowgridside {
-    height: 40vh;
+    height: 45vh;
     width: 8%;
     flex: 5% 90% 5%;
+}
+
+.projectimg {
+    opacity: 0;
+    height: 2vh;
 }
 
 .arrowright {

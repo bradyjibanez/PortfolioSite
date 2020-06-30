@@ -17,9 +17,10 @@ export class ProjectsCollectionComponent implements OnInit {
 
   ngOnInit() {
   	this.project = this.projects[this.count];
+    this.background_img_path = '../../assets/'+this.project['ID']+'/'+this.background_img;    
   }
 
-  nextModalImg() {
+  nextProjectImg() {
   	console.log(this.projects[this.count])
   	let project = this.projects[this.count];
     if (this.background_img === "query.png") {
@@ -34,7 +35,7 @@ export class ProjectsCollectionComponent implements OnInit {
     this.background_img_path = '../../assets/'+project['ID']+'/'+this.background_img;
   }
 
-  prevModalImg() {
+  prevProjectImg() {
   	let project = this.projects[this.count];
     if (this.background_img === "query.png") {
       this.background_img = 'result.png';

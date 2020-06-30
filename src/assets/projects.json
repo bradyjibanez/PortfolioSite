@@ -49,7 +49,7 @@
 			"Image": "false",
 			"Type": "Local",
 			"Github_Link": "https://github.com/bradyjibanez/DistributedSocketChat",
-			"Description": "An entirely Java based console app written using Java RMI (remote method invocation). This app allows for up to four users to connect via Java socketing through a console interfaced application and engage in a transparent group chat. This application was rewritten at a later time in Python to operate as a Django web app called Chatter. It included an unlimited count of chat participants (assuming registered count was not exceeded), and is also available for reference at my github."
+			"Description": "An entirely Java based console app written using Java RMI (remote method invocation). This app allows for up to four users to connect via Java socketing through a console interfaced application and engage in a transparent group chat. It was rewritten at a later time in Python to operate as a Django web app called Chatter, which is available on my Github. It included an unlimited count of chat participants (assuming registered count was not exceeded), and is also available for reference at my github."
 		}						
 	]
 }
