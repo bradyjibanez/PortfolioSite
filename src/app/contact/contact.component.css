@@ -165,12 +165,12 @@ input[type=submit]:hover {
     letter-spacing: 10px;
   }  
 
-#body {
-    margin: 3em auto;
-    text-align: center;
-    width: 50%; 
-    height: 80vh;
-}
+  #body {
+      margin: 3em auto;
+      text-align: center;
+      width: 90%; 
+      height: 80vh;
+  }
 
   .emailcopynotification {
     position: absolute;
