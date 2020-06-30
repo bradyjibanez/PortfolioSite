@@ -21,7 +21,6 @@ export class ProjectsCollectionComponent implements OnInit {
   }
 
   nextProjectImg() {
-  	console.log(this.projects[this.count])
   	let project = this.projects[this.count];
     if (this.background_img === "query.png") {
       this.background_img = 'response.png';
