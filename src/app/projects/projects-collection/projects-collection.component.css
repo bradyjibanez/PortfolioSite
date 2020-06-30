@@ -12,7 +12,8 @@ h1 {
     background: white;
     width: 50%; 
     left: 25%;
-    border-radius: 5px
+    border-radius: 5px;
+    opacity: 0.75;
 }
 
 h5 {
@@ -41,8 +42,9 @@ a {
 }
 
 #body {
+    border-top: 10px solid #585858;
     text-align: center;
-    height: 50vh;
+    height: 70vh;
 }
 
 #footer {
@@ -72,13 +74,13 @@ a {
     width: 90%;
     flex: 5% 90% 5%;
     overflow: hidden;
+    padding-top: 28em;
     background-size: cover;
 }
 
 .imgarrowgridside {
-    height: 45vh;
+    height: 65vh;
     width: 8%;
-    flex: 5% 90% 5%;
 }
 
 .projectimg {
@@ -173,17 +175,65 @@ button:focus{
 
 @media screen and (max-width: 800px) {
 
-  #body {
-    text-align: center;
-    width: 100%; 
-  }
 
   h1 {
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif; 
     font-weight: 100;
     font-size: 3vw;
-    letter-spacing: 10px;
+    width: 90%;
+    letter-spacing: 5px;
+    left: 5%;
   }  
 
+  #body {
+    text-align: center;
+    width: 100%; 
+  }
+
+  .imgarrowgridmiddle {
+    width: 90%;
+    flex: 5% 90% 5%;
+    overflow: hidden;
+    background-size: cover;
+    padding-top: 18em;
+  }
+
+  .imgarrowgridside {
+    height: 45vh;
+    width: 12%;
+  }  
+
+  .navtext {
+    color: white;
+    font-size: 2.75em;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;      
+  }
+
+  .arrowright {
+    cursor: pointer;    
+    border: solid #90ee90;
+    border-width: 0 0.75em 0.75em 0;
+    display: inline-block;
+    padding: 1em;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    transition: border 0.5s;    
+  }
+
+  .arrowleft {
+    cursor: pointer;    
+    border: solid #90ee90;
+    border-width: 0 0.75em 0.75em 0;
+    display: inline-block;
+    padding: 1em;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    transition: border 0.5s;    
+  }
 }
