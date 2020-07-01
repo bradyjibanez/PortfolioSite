@@ -202,10 +202,10 @@ button:focus{
   }
 
   .imgarrowflex {
-      background-size: 100% 100%;
-      display: flex; 
-      align-items: stretch;
-      height: 31.5vh;
+    background-size: 100% 100%;
+    display: flex; 
+    align-items: stretch;
+    height: auto;
   }
 
   .imgarrowgridside {
