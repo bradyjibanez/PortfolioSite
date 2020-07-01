@@ -195,7 +195,8 @@ button:focus{
     width: 90%;
     flex: 5% 90% 5%;
     overflow: hidden;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-top: 18em;
   }
 
