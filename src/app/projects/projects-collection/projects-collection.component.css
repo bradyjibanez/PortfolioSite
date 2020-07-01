@@ -198,14 +198,14 @@ button:focus{
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 18em;
+    padding-top: 12em;
   }
 
   .imgarrowflex {
       background-size: 100% 100%;
       display: flex; 
       align-items: stretch;
-      height: 33vh;
+      height: 31.5vh;
   }
 
   .imgarrowgridside {
