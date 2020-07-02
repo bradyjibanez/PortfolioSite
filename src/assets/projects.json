@@ -36,7 +36,7 @@
 			"Description": "The driver base for an EPIC IoT (see project above) package that allows for users to interact with a facial recognition agent capabale of referencing unrecognized faces, learning the face, and notifiying when that person is seen at a later time. This was a delve into facial recognition provided through Python OpenCV, and uses the HOG (histogram of oriented gradients) feature descriptor as the primary mechanism for face rec in the agent's driving algorithm. The agent communicates directly through the Python smtplib library and raw Python drivers, and interacts with it's environment via a RaspberryPi3 and the stock Pi camera, however could easily be implemented with any IP enabled camera, or multiple cameras."
 		},
 		{
-			"ID": "Node/ExpressAuthServer",												
+			"ID": "NodeExpressAuthServer",												
 			"Title": "Node/Express Auth Server",
 			"Image": "false",
 			"Type": "Local",
