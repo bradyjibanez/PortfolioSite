@@ -76,6 +76,7 @@ a {
     overflow: hidden;
     padding-top: 28em;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .imgarrowgridside {
