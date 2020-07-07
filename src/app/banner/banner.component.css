@@ -156,9 +156,11 @@ b:hover {
     animation: 0.75s ease 0s normal forwards 1 fadein;
 	background-color: #2B2D2F;
 	height: 4em;
+	z-index: 3;
 	width: 100%;
 	vertical-align: middle;
-	position: relative;
+	position: fixed;
+	top: 0;
 	border-top: solid;
 	border-bottom: solid;
 }
