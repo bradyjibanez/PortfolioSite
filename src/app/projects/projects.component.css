@@ -281,9 +281,29 @@ a {
     background-color: rgba(0,0,0,0.75);
   }
 
+  .imgarrowgrid {
+    flex: 0 0 15%;
+    height: 45vh;  
+  }
+
+  .imggrid {
+    flex: 0 0 70%;
+    height: 45vh; 
+  }
+
   .modalimgcontainer {
     opacity: 0;
     height: 75vw;
   }
 
+  .arrow {
+    border: solid #90ee90;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    transition: border 0.5s;    
+  }
 }
