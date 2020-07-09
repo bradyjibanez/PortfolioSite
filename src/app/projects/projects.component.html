@@ -37,6 +37,9 @@
 			<div style="text-align: left;">
 				{{ project_selected.Description }}
 			</div>
+			<div class="descpar2">
+     			{{ project_selected.Description2 }}				
+			</div>
 			<a [attr.href]="project_selected.URL"><button class="button"><h3>visit 	{{project_selected.Title}}</h3></button></a>
 		</div>
 		<div style="margin-bottom: 0.5em;">
@@ -50,8 +53,11 @@
 	</div>
 	<div class="imgarrowflex" [ngStyle]="{'background-image': getImage()}">
 		<button (click)="prevModalImg()" class="nobutton imgarrowgrid"><i class="fadeio arrow left"></i></button>
-		<div class="imgarrowgrid modalimgcontainer">
+		<div *ngIf="!iframe" class="imggrid modalimgcontainer">
 			<img class="modalimgsize" src='assets/modelsize.png'>
+		</div>
+		<div *ngIf="iframe" class="imggrid">
+			<iframe width="80%" height="98%%" src="https://drive.google.com/file/d/1-Vf_gE9CrkWkE82uO9ZYs7gPCZvXtFDa/preview"></iframe>
 		</div>
 		<button (click)="nextModalImg()" class="nobutton imgarrowgrid"><i class="fadeio arrow right"></i></button>
 	</div>

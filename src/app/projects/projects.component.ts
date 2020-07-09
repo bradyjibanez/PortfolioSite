@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import * as Projects from '../../assets/projects.json';
 
 import { MessageService } from '../_services';
@@ -19,6 +19,7 @@ export class ProjectsComponent implements OnInit {
   ignore: Boolean;
   // override ignore inside modal for internal modal destroy icon
   dont_refresh: Boolean = false;
+  iframe: Boolean = false;
   project_selected: JSON = null;
   background_img: string = 'query.png';
   background_img_path: string;
@@ -49,6 +50,9 @@ export class ProjectsComponent implements OnInit {
   	  }
     });    
     this.clicked = true;
+    if (this.project_selected['ID'] === "EPICIoT") {
+      this.iframe = true;
+    }
     if (!this.dont_refresh) {
       this.ignore = true;
     } else {
@@ -57,7 +61,6 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
-  //@HostListener('document:click', ['$event'])
   dontLearnMore() {
     if (this.clicked && !this.ignore) {
       this.clicked = false;
@@ -71,6 +74,8 @@ export class ProjectsComponent implements OnInit {
     if (this.clicked) {
       this.clicked = false;
       this.project_selected = null;
+      this.iframe = false;
+      this.background_img = 'query.png';
     } else {
       this.ignore = false;
     }
@@ -78,12 +83,18 @@ export class ProjectsComponent implements OnInit {
 
   nextModalImg() {
     if (this.background_img === "query.png") {
+      if (this.project_selected['ID'] === "EPICIoT") {
+        this.iframe = false;  
+      }
       this.background_img = 'response.png';
     }
     else if (this.background_img === "response.png") {
       this.background_img = "result.png"
     }
     else if (this.background_img === "result.png") {
+      if (this.project_selected['ID'] === "EPICIoT") {
+        this.iframe = true;  
+      }      
      this.background_img = "query.png";
     }
     this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
@@ -91,19 +102,27 @@ export class ProjectsComponent implements OnInit {
 
   prevModalImg() {
     if (this.background_img === "query.png") {
+      if (this.project_selected['ID'] === "EPICIoT") {
+        this.iframe = false;  
+      }
       this.background_img = 'result.png';
     }
-    else if (this.background_img === "result.png") {
+    else if (this.background_img === "result.png") {     
       this.background_img = "response.png"
     }
     else if (this.background_img === "response.png") {
+      if (this.project_selected['ID'] === "EPICIoT") {
+        this.iframe = true;  
+      }         
      this.background_img = "query.png";
     }
     this.background_img_path = '../../assets/'+this.project_selected['ID']+'/'+this.background_img;
   }  
 
   getImage() {
-    return "url("+this.background_img_path+")";
+    if (!this.iframe) {
+      return "url("+this.background_img_path+")";
+    }
   }
 
 }

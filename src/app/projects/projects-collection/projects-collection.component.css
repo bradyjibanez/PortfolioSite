@@ -3,17 +3,18 @@
 
 h1 {
     color: black;
-    font-style: italic;
+    font-style: bold;
+    font-weight: 800;
     font-family: 'Open Sans Condensed', sans-serif; 
-    font-weight: 100;
     font-size: 22px;
+    color: white;
     letter-spacing: 2px;
     margin-bottom: 0;
-    background: white;
+    background: grey;
     width: 50%; 
     left: 25%;
     border-radius: 5px;
-    opacity: 0.75;
+    opacity: 0.95;
 }
 
 h5 {
@@ -21,7 +22,7 @@ h5 {
     color: white;
     font-weight: 100;
     font-style: inherit;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0.75em 1em 0.75em 1em;
 }
 
@@ -74,7 +75,7 @@ a {
     width: 90%;
     flex: 5% 90% 5%;
     overflow: hidden;
-    padding-top: 28em;
+    padding-top: 1em;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -197,7 +198,7 @@ button:focus{
     width: 90%;
     flex: 5% 90% 5%;
     overflow: hidden;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-top: 12em;
   }
