@@ -133,7 +133,7 @@ export class ProjectsComponent implements OnInit {
   }  
 
   getImage() {
-    if (!this.iframe) {
+    if (!this.iframe && !this.iframe2) {
       return "url("+this.background_img_path+")";
     }
   }
