@@ -13,7 +13,9 @@
 	  			<button (click)="copyEmail()" class="nobutton">
 					<i class="fa fa-envelope linklistitem" style="font-size:36px; color:black;"></i>
 				</button>
-				<div *ngIf="copy_email" class="emailcopynotification fadeio">{{ message }}</div>
+				<div *ngIf="copy_email" class="emailcopynotification fadeio">
+					{{ message }}
+				</div>
 	  		</div>  
 	  		<div>
 				<a href="https://github.com/bradyjibanez">

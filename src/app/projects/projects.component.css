@@ -65,7 +65,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
-  width: 65%;
+  width: 55%;
   height: auto;
   text-align: center;
 	z-index: 1;
@@ -87,10 +87,10 @@ a {
 }
 
 .projectdescription {
-	margin: 0.5em auto 0 auto;
+	margin: 0.25em auto 0 auto;
 	max-width: 95%;
 	min-width: 50%;
-  font-size: 14px;
+  font-size: 13.5px;
 	text-align: center;
   text-indent: 1em;
 }
@@ -99,7 +99,7 @@ a {
   margin: 0.25em auto 0 0;
   max-width: 95%;
   min-width: 50%;
-  font-size: 14px;  
+  font-size: 13.5px;  
   text-align: left;
 }
 
@@ -163,7 +163,7 @@ a {
 
 .imggrid {
   flex: 0 0 80%;
-  height: 45vh;  
+  height: 45vh; 
 }
 
 .arrow {

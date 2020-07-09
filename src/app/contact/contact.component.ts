@@ -58,6 +58,7 @@ export class ContactComponent implements OnInit {
   			this.copy_email = false;
   		}, 5000);		
   	}
+    window.location.href = "mailto:bradyjibanez@gmail.com";
   }  
 
   emailSent() {

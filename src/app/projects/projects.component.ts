@@ -20,6 +20,7 @@ export class ProjectsComponent implements OnInit {
   // override ignore inside modal for internal modal destroy icon
   dont_refresh: Boolean = false;
   iframe: Boolean = false;
+  iframe2: Boolean = false;
   project_selected: JSON = null;
   background_img: string = 'query.png';
   background_img_path: string;
@@ -84,16 +85,22 @@ export class ProjectsComponent implements OnInit {
   nextModalImg() {
     if (this.background_img === "query.png") {
       if (this.project_selected['ID'] === "EPICIoT") {
-        this.iframe = false;  
+        this.iframe = false;
+        this.iframe2 = true;  
       }
       this.background_img = 'response.png';
     }
     else if (this.background_img === "response.png") {
+      if (this.project_selected['ID'] === "EPICIoT") {
+        this.iframe2 = false;
+        this.iframe = false;  
+      }      
       this.background_img = "result.png"
     }
     else if (this.background_img === "result.png") {
       if (this.project_selected['ID'] === "EPICIoT") {
-        this.iframe = true;  
+        this.iframe = true; 
+        this.iframe2 = false; 
       }      
      this.background_img = "query.png";
     }
@@ -103,16 +110,22 @@ export class ProjectsComponent implements OnInit {
   prevModalImg() {
     if (this.background_img === "query.png") {
       if (this.project_selected['ID'] === "EPICIoT") {
-        this.iframe = false;  
+        this.iframe2 = false;
+        this.iframe = false
       }
       this.background_img = 'result.png';
     }
-    else if (this.background_img === "result.png") {     
+    else if (this.background_img === "result.png") {
+      if (this.project_selected['ID'] === "EPICIoT") {
+        this.iframe2 = true;
+        this.iframe = false;  
+      }         
       this.background_img = "response.png"
     }
     else if (this.background_img === "response.png") {
       if (this.project_selected['ID'] === "EPICIoT") {
-        this.iframe = true;  
+        this.iframe = true;
+        this.iframe2 = false;
       }         
      this.background_img = "query.png";
     }
