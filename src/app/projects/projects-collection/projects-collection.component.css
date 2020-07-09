@@ -191,7 +191,7 @@ button:focus{
   #body {
     border-top: 10px solid #585858;
     text-align: center;
-    height: 50vh;
+    height: auto;
   }
 
   .imgarrowgridmiddle {
@@ -219,12 +219,19 @@ button:focus{
     background-color: #585858;
     margin-top: auto;
     width: 100%;
-    height: 26vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  .footergridcontent {
+    flex: 1;
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 12px;
+  }  
 
   .navtext {
     color: white;
