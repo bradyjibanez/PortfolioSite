@@ -21,7 +21,7 @@ a:hover {
 }
 
 b {
-	color: #2B2D2F;
+	color: #D3D3D3;
 	text-decoration: none;
     font-family: 'Ostrich Sans Rounded', arial; 
 	font-weight: 600;
@@ -33,7 +33,7 @@ b {
 }
 
 b:hover {
-	color: #adadad;
+	color: #181818;
 }
 
 
@@ -64,13 +64,15 @@ b:hover {
 
 #bannerimg {
 	margin: -1em;
+	height: 85%;
+	width: 105%;
 }
 
 #homelogo {
-	border-top: 15px solid white;
-	border-bottom: 15px solid white;
-	border-right: 30px solid white;
-	border-left: 30px solid white;
+	border-top: 15px solid #383838;
+	border-bottom: 15px solid #383838;
+	border-right: 30px solid #383838;
+	border-left: 30px solid #383838;
 	width: 55%;
 	height: 25%;
 	position: absolute;
@@ -86,7 +88,7 @@ b:hover {
 	transform: translate(-50%, -50%);
 	width: 100%;
 	text-align: center;
-	color: white;
+	color: #383838;
     font-family: 'Anton', sans-serif; 
 	font-weight: 900;
 	font-size: 5vw;
@@ -99,7 +101,7 @@ b:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	color: white;
+    color: #383838;
     font-family: 'Open Sans Condensed', sans-serif; 
 	font-weight: 100;
 	font-size: 4vw;
@@ -118,9 +120,9 @@ b:hover {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-    background-color: #D3D3D3;
+    background-color: #383838;
     border: none;
-    color: white;
+    color: #383838;
     padding: 30px 64px;
     text-align: center;
     text-decoration: none;
@@ -139,12 +141,12 @@ b:hover {
 
 #homeentercontainer {
 	box-sizing: content-box;  
-	background-color: white;
+	background-color: #383838;
 	opacity: 0.25;
 	width: 430px;
 	height: 80px;
 	padding: 30px;  
-	border: 10px solid white;	
+	border: 10px solid #383838;	
 }
 
 
@@ -220,10 +222,10 @@ b:hover {
 	}
 
 	#homelogo {
-		border-top: 15px solid white;
-		border-bottom: 15px solid white;
-		border-right: 30px solid white;
-		border-left: 30px solid white;
+		border-top: 15px solid #383838;
+		border-bottom: 15px solid #383838;
+		border-right: 30px solid #383838;
+		border-left: 30px solid #383838;
 		width: 55%;
 		height: 15%;
 		position: absolute;
@@ -239,21 +241,21 @@ b:hover {
 		transform: translate(-50%, -50%);
 		width: 100%;
 		text-align: center;
-		color: white;
+		color: #383838;
 	    font-family: 'Open Sans Condensed', sans-serif; 
-		font-weight: 100;
+		font-weight: 600;
 		font-size: 4vw;
 	    letter-spacing: 19px;			
 	}
 
 	#homeentercontainer {
 		box-sizing: content-box;  
-		background-color: white;
+		background-color: #383838;
 		opacity: 0.25;
 		width: 240px;
 		height: 80px;
 		padding: 30px;
-		border: 10px solid white;	
+		border: 10px solid #383838;	
 	}
 
 
@@ -262,7 +264,7 @@ b:hover {
 		top: 50%;
 		left: 49.5%;
 		transform: translate(-50%, -50%);
-	    background-color: #D3D3D3;
+	    background-color: #383838;
 	    border: none;
 	    color: white;
 	    padding: 30px 20px;
@@ -284,6 +286,12 @@ b:hover {
 		top: 0;
 	}
 
+	#bannerimg {
+		margin: -50em;
+		height: 125%;
+		width: 1000%;
+	}		
+
 }
 
 
@@ -297,6 +305,12 @@ b:hover {
 		height: 100%;
 		overflow: hidden;
 	}
+
+	#bannerimg {
+		margin: -55em;
+		height: 85%;
+		width: auto;
+	}	
 
 	#homelogosubtitle {
 		position: absolute;
