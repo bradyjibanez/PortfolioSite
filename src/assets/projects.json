@@ -6,30 +6,30 @@
 			"URL":"https://www.epiciot.online",
 			"Image": "true",
 			"Type": "Live",
-			"Github_Link": "https://github.com/bradyjibanez/EPICfrontend",			
+			"Github_Link": "https://github.com/bradyjibanez/EPICfrontend",
 			"Description": "The Extensible Package Integration Controller IoT Framework - An application that allows for users to create RESTfully interacting apps to control embedded system enabled IoT devices. This app is intended to allow for universalization of IoT, and to bridge the gap between non-interactive platforms. It is entirely agnostic to the transmission medium or iterative technology of any device controlling package (platform dedicated software). This is meant to give developers free reign for what their IoT package can control or represent.",
 			"Description2": "It is written front side using Angular and Node.js-Express servers. The service depends upon a hub device for package install and control written in Python. The backend service relies on Node.js to interact with and call from a MongoDB instance. Everything is independently served through local NGINX instances living in Docker Ubuntu containers. Please contact me to inquire about access for full source code reference (link only provides angular front end) or hub drivers reference."
 		},
 		{
 			"ID": "MyAcePortrait",
 			"Title": "My Ace Portrait",
-			"URL":"http://myaceportrait.tk",			
+			"URL":"http://myaceportrait.tk",
 			"Image": "true",
 			"Type": "Live",
-			"Github_Link": "https://github.com/bradyjibanez/MyAcePortrait",			
-			"Description": "A school project, this is a job hunting application for software industry leaders looking for new employees to fit a junior developer position, and new software dev grads looking for their first job out of school. This application is written in Django and takes advantage of uWSGI paired with NGINX through a Digital Ocean droplet. The default mySQLlite database included by Django is used for account maintenance and interaction"
+			"Github_Link": "https://github.com/bradyjibanez/MyAcePortrait",
+			"Description": "A school project, this is a job hunting application for software industry leaders looking for new employees to fit a junior developer position, and new software dev grads looking for their first job out of school. This application is written in Django and takes advantage of uWSGI paired with NGINX through a Digital Ocean droplet. The default mySQLlite database included by Django is used for account maintenance and interaction. --> NOT CURRENTLY LIVE"
 		},
 		{
-			"ID": "ThisWay",			
+			"ID": "ThisWay",
 			"Title": "thisWay",
-			"URL":"http://cloudassignment2ibanez.herokuapp.com",			
+			"URL":"http://cloudassignment2ibanez.herokuapp.com",
 			"Image": "true",
 			"Type": "Live",
-			"Github_Link": "https://github.com/bradyjibanez/ThisWay",			
+			"Github_Link": "https://github.com/bradyjibanez/ThisWay",
 			"Description": "A school project done for a Cloud Computing course. This web app allows users to find an image of a landmark they care to visit, and allows them to input their currect address in order to be given directions via email from their location to the landmark. The app uses an array of Google provided APIs, including the Location API for direction generation, Cloud Vision API for landmark recognition, and the Google SMTP server for directions relay via email. This app is hosted via a Heroku Dyno, and is implemented as a Django web-app. (On visit, free Heroku Dynos take a few seconds to load)"
 		},
 		{
-			"ID": "EPICFaceRecDriver",												
+			"ID": "EPICFaceRecDriver",
 			"Title": "EPIC Face Rec Driver",
 			"Image": "false",
 			"Type": "Local",
@@ -37,7 +37,7 @@
 			"Description": "The driver base for an EPIC IoT (see project above) package that allows for users to interact with a facial recognition agent capabale of referencing unrecognized faces, learning the face, and notifiying when that person is seen at a later time. This was a delve into facial recognition provided through Python OpenCV, and uses the HOG (histogram of oriented gradients) feature descriptor as the primary mechanism for face rec in the agent's driving algorithm. The agent communicates directly through the Python smtplib library and raw Python drivers, and interacts with it's environment via a RaspberryPi3 and the stock Pi camera, however could easily be implemented with any IP enabled camera, or multiple cameras."
 		},
 		{
-			"ID": "NodeExpressAuthServer",												
+			"ID": "NodeExpressAuthServer",
 			"Title": "Node/Express Auth Server",
 			"Image": "false",
 			"Type": "Local",
@@ -45,12 +45,12 @@
 			"Description": "A general purpose JWT provisioning auth server written in Node.js using the Express webframework. This allows for an MCS (model controller service) object instance authentication implementation. The particular instance referenced here is the auth server for the EPIC IoT app mentioned previously, which needs authentciation for both user and environment accounts."
 		},
 		{
-			"ID": "DistributedSocketChat",												
+			"ID": "DistributedSocketChat",
 			"Title": "Distributed Socket Chat",
 			"Image": "false",
 			"Type": "Local",
 			"Github_Link": "https://github.com/bradyjibanez/DistributedSocketChat",
 			"Description": "An entirely Java based terminal app written using Java RMI (remote method invocation). This app allows for up to four users to connect via Java socketing through a console interfaced application and engage in a transparent group chat. It was rewritten at a later time in Python to operate as a Django web app called Chatter, which is available on my Github. It included an unlimited count of chat participants (assuming registered count was not exceeded), and is also available for reference at my github."
-		}						
+		}
 	]
 }
