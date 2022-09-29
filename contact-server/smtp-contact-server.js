@@ -37,4 +37,5 @@ async function sendMail(message_request) {
 
 app.listen(3000, () => {
   console.log("bradyjibanez portfolio smtp server...ENGAGE");
+  console.log("TRANS::: ", transport_obj)
 });
