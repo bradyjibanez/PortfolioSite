@@ -1,0 +1,15 @@
+const smtpTransport = require('nodemailer-smtp-transport');
+
+let transport_obj = smtpTransport({
+			service: "gmail",
+			host: 'smtp.gmail.com',
+			port: 456,
+			logger: true,
+			debug: true,
+		        auth: {
+		            user: "34shenandoah@gmail.com",
+		            pass: "yiqybghwkcieabfp"
+		        }
+		    })
+
+module.exports = transport_obj
