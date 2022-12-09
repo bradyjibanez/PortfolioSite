@@ -17,7 +17,7 @@
 			"Image": "true",
 			"Type": "Live",
 			"Github_Link": "https://github.com/bradyjibanez/MyAcePortrait",
-			"Description": "A school project, this is a job hunting application for software industry leaders looking for new employees to fit a junior developer position, and new software dev grads looking for their first job out of school. This application is written in Django and takes advantage of uWSGI paired with NGINX through a Digital Ocean droplet. The default mySQLlite database included by Django is used for account maintenance and interaction. --> NOT CURRENTLY LIVE"
+			"Description": "A school project, this is a job hunting application for software industry leaders looking for new employees to fit a junior developer position, and new software dev grads looking for their first job out of school. This application is written in Django and takes advantage of uWSGI paired with NGINX through a Digital Ocean droplet. The default mySQLlite database included by Django is used for account maintenance and interaction."
 		},
 		{
 			"ID": "ThisWay",
@@ -26,7 +26,7 @@
 			"Image": "true",
 			"Type": "Live",
 			"Github_Link": "https://github.com/bradyjibanez/ThisWay",
-			"Description": "A school project done for a Cloud Computing course. This web app allows users to find an image of a landmark they care to visit, and allows them to input their currect address in order to be given directions via email from their location to the landmark. The app uses an array of Google provided APIs, including the Location API for direction generation, Cloud Vision API for landmark recognition, and the Google SMTP server for directions relay via email. This app is hosted via a Heroku Dyno, and is implemented as a Django web-app. (On visit, free Heroku Dynos take a few seconds to load)"
+			"Description": "A school project done for a Cloud Computing course. This web app allows users to find an image of a landmark they care to visit, and allows them to input their currect address in order to be given directions via email from their location to the landmark. The app uses an array of Google provided APIs, including the Location API for direction generation, Cloud Vision API for landmark recognition, and the Google SMTP server for directions relay via email. This app is hosted via a Heroku Dyno, and is implemented as a Django web-app. --> NOT CURRENTLY LIVE"
 		},
 		{
 			"ID": "EPICFaceRecDriver",
