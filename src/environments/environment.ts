@@ -1,4 +1,4 @@
 export const environment = {
   production: false,	
-  sftp_server_uri: 'http://bradyjibanez.tk/',
+  sftp_server_uri: 'https://bradyjibanez.tk/',
 };

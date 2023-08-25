@@ -70,7 +70,7 @@ export class ContactComponent implements OnInit {
   }    
 
   emailFailed() {
-    this.message = "Well this doesn't look good, but there was an error sending your message...but please take a copy of my email address and message me.";    
+    this.message = "Well this doesn't look good, but there was an error sending your message...please take a copy of my email address and message me.";    
     this.email_failed = true;
     window.setTimeout(() => {
       this.email_failed = false;
